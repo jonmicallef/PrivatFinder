@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="35dp"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:padding="5dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PrivatFinder"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:paddingLeft="120dp"
+        android:paddingTop="22dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find your optimum tutor"
+        android:textColor="@color/black"
+        android:paddingLeft="130dp"
+        android:paddingTop="65dp"
+        android:textSize="18dp"
+        />
+    <EditText
+
+        android:id="@+id/usernameLogin"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:hint=" Email"
+        android:layout_marginTop="25dp"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+
+        android:id="@+id/passwordLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint=" Password"
+        android:textColor="@color/black"
+        android:textSize="23dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Log-in"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordLogin"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:backgroundTint="@color/special_pink"
+        />
+</RelativeLayout>

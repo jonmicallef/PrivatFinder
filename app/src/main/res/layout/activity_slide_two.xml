@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slideTwo"
+    android:background="@drawable/slidetwo">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="35dp"
+    android:textColor="@color/text.grey"
+    android:gravity="center"
+    android:layout_marginTop="340dp"
+    android:paddingHorizontal="50dp"
+    android:text="Here, in our app, is were you come to find Privat teachers and tutors"
+/>
+
+    <Button
+        android:id="@+id/btnnextt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Next"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnskipp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="30dp"
+        android:padding="4dp"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>
