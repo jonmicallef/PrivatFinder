@@ -27,19 +27,19 @@
         android:layout_height="wrap_content"
         android:text="PrivatFinder"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="35dp"
         android:paddingLeft="120dp"
         android:paddingTop="22dp"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Find your optimum tutor"
-        android:textColor="@color/black"
         android:paddingLeft="130dp"
         android:paddingTop="65dp"
-        android:textSize="18dp"
-        />
+        android:text="Find your optimum tutor"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
     <EditText
 
         android:id="@+id/usernameLogin"
