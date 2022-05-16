@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Slideshow">
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".slideTwo"

@@ -100,7 +100,7 @@ public class TeacherList extends AppCompatActivity {
                 return true;
             case R.id.LogOut:
                 Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
-                //startActivity(new Intent(TeacherList.this, AnnaCarbonaro.class));
+                startActivity(new Intent(TeacherList.this, slideOne.class));
                 return true;
 
         }

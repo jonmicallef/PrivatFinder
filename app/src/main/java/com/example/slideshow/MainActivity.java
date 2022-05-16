@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                             Boolean regResult = myDB.insertData(user,pass);
                             if(regResult == true){
                                 Toast.makeText(MainActivity.this, "Sign Up successful", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                                Intent intent = new Intent(getApplicationContext(),Login.class);
                                 startActivity(intent);
                             }
                             else{
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }
         });
