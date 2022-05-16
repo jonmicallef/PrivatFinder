@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Slideshow">
-        <activity
-            android:name=".TeacherList"
-            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -30,6 +28,50 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+            <activity android:name=".Teachers.RichardBonnici"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.GeorgeMicallef"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.NatashaMifsud"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.VictorValdes"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.JonathanGalea"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.JeromeMicallef"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.TarahGalea"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.MichealGonzalez"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.JasonBartolo"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.JackGrech"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.AnnaCarbonaro"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.KayAzzopardi"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".Teachers.GabriellaBonnici"
+                android:label="Tutor Details">
+            </activity>
+            <activity android:name=".TeacherList"
+                android:label="Tutor Details">
+            </activity>
+
     </application>
 
 </manifest>

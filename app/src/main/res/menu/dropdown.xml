@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="@color/white">
+
+
+    <item android:id="@+id/sort"
+        android:title="Sort Teachers"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/sortbyAlphabet"
+                android:title="Sort Alphabetically"/>
+
+            <item android:id="@+id/sortbyPrice"
+                android:title="Sort by Subject"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/LogOut"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+
+</menu>
