@@ -44,9 +44,8 @@ import java.util.TreeMap;
 
 public class TeacherList extends AppCompatActivity {
 
-//    private Object AdapterView;
-//    private Object ViewTeacher;
 
+    //sorting teacher list alphabetically
     public static <K, V extends Comparable<V>> Map<K, V>
     valueSort(final Map<K, V> map) {
         // Static Method with return type Map and
@@ -75,30 +74,28 @@ public class TeacherList extends AppCompatActivity {
         return sorted;
     }
 
-    //    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.example_menu, menu);
-//        return true;
-//    }
+   //setting dropdown menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.dropdown,menu);
         return true;
     }
-
+    //dropdown menu options
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem ) {
         switch (menuItem.getItemId()) {
-
+            //case user chooses sort by Alphabet
             case R.id.sortbyAlphabet:
+                //outputting at the bottom of the screen via toast
                 Toast.makeText(this, "List is already sorted", Toast.LENGTH_SHORT).show();
                 break;
+             //case user chooses sort by Subject
             case R.id.sortbyPrice:
                 Toast.makeText(this, "Cannot Sort by Subject at the moment", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.LogOut:
+                //User chooses to log out and is logged back into the slides activity
                 Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(TeacherList.this, slideOne.class));
                 return true;
@@ -111,15 +108,16 @@ public class TeacherList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-
+        //setting toolbar
         Toolbar toolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
+        //getting app logo and setting it in the center of the toolbar
         getSupportActionBar().setIcon(getDrawable(R.drawable.logo));
         ListView resultsListView = (ListView) findViewById(R.id.results_listview);
 
 
 
-
+        //inputting list of teachers into TreeMap data structure
         TreeMap<String, String> nameSubject = new TreeMap<>();
         nameSubject.put("Richard Bonnici", "Maths");     //1
         nameSubject.put("Natasha Mifsud", "English");   //2
@@ -135,7 +133,7 @@ public class TeacherList extends AppCompatActivity {
         nameSubject.put("George Micallef", "Physics");   //12
         nameSubject.put("Gabriella Bonnici", "Maths");   //13
 
-
+        //Sorting List Alphabetically
         Map sortedMap = valueSort(nameSubject);
 
         // Get a set of the entries on the sorted map
@@ -144,12 +142,13 @@ public class TeacherList extends AppCompatActivity {
         // Get an iterator
         Iterator i = set.iterator();
 
+        //making adapter for listView
         List<HashMap<String, String>> listItems = new ArrayList<>();
         SimpleAdapter adapter = new SimpleAdapter(this, listItems, R.layout.list_item,
                 new String[]{"First Line", "Second Line"},
                 new int[]{R.id.text1, R.id.text2});
 
-
+        //while loop to displat TreeMap items into ViewList
         Iterator it = nameSubject.entrySet().iterator();
         while (it.hasNext()) {
             HashMap<String, String> resultsMap = new HashMap<>();
@@ -160,10 +159,11 @@ public class TeacherList extends AppCompatActivity {
         }
         resultsListView.setAdapter(adapter);
 
+        //switch case for ViewList
         resultsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(android.widget.AdapterView<?> adapterView, View view, int i, long l) {
-//
+            //According to item position the item clicked on is taken to its respective class and makes use of viewteacher.xml
                 switch (i) {
                     case 0:
                         startActivity(new Intent(TeacherList.this, AnnaCarbonaro.class));

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This is the page outputted when a user clicks on a tutor name in the viewlist page,
+linked with all the teacher classes -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+<!--Outputting Tutor Name-->
     <TextView
         android:id="@+id/TeacherName"
         android:layout_width="0dp"
@@ -22,7 +24,7 @@
         app:layout_constraintStart_toStartOf="@+id/Price"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0" />
-
+<!--Outputting Tutor Subject-->
     <TextView
         android:id="@+id/TeacherSubject"
         android:layout_width="363dp"
@@ -38,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Price" />
-
+<!--Outputting Tutor description-->
     <TextView
         android:id="@+id/TeacherDescription"
         android:layout_width="387dp"
@@ -54,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TeacherSubject" />
-
+<!--Button to Contact tutor via Phone-->
     <Button
         android:id="@+id/btnCall"
         android:layout_width="379dp"
@@ -67,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TeacherDescription" />
-
+<!--Button to Contact tutor via Email-->
     <Button
         android:id="@+id/buttonEmail"
         android:layout_width="382dp"
@@ -80,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCall" />
-
+<!--Tutors Price-->
     <TextView
         android:id="@+id/Price"
         android:layout_width="235dp"
@@ -94,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
+<!--Tutor Profile Image -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="134dp"

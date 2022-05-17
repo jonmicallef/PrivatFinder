@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This xml file is used to display the dropdown list in the toolbar-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:textColor="@color/white">
 
-
+<!--Sort teachers option-->
     <item android:id="@+id/sort"
         android:title="Sort Teachers"
         app:showAsAction="never">
-
+<!--        Sorting teacher by either alphabet or subject-->
         <menu>
             <item android:id="@+id/sortbyAlphabet"
                 android:title="Sort Alphabetically"/>
@@ -16,7 +17,7 @@
                 android:title="Sort by Subject"/>
         </menu>
     </item>
-
+<!--Log out option-->
     <item android:id="@+id/LogOut"
         android:title="Log Out"
         app:showAsAction="never"/>

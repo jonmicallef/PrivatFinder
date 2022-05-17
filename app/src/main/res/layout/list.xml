@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".TeacherList">
 
-
+<!--    including toolbar in viewlist activity-->
     <include
         android:id="@+id/mytoolbar"
         layout="@layout/toolbar"
@@ -20,7 +20,7 @@
         android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+<!--Setting listview activity-->
     <ListView
         android:id="@+id/results_listview"
         android:layout_width="396dp"

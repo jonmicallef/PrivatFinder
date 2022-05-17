@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.slideshow.R;
 
-
+//refer to AnnaCarbonaro.class for inline comments due to repeated method
 public class GabriellaBonnici extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class GabriellaBonnici extends AppCompatActivity {
                 intent.setType("plain/text");
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "gabriellab@gmail.com" });
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Tutorials inquiry");
-                intent.putExtra(Intent.EXTRA_TEXT, "mail body");
+                intent.putExtra(Intent.EXTRA_TEXT, "");
                 startActivity(Intent.createChooser(intent, ""));
             }
         });
