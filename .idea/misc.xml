@@ -13,10 +13,8 @@
         <entry key="..\:/Users/jonjo/Documents/slideshow/app/src/main/res/layout/activity_slide_one.xml" value="0.2" />
         <entry key="..\:/Users/jonjo/Documents/slideshow/app/src/main/res/layout/activity_slide_two.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jonjo/Documents/slideshow/app/src/main/res/layout/activity_teacher_list.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/activity_home.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/activity_slide_one.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/activity_slide_two.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/list.xml" value="0.3616692426584235" />
         <entry key="..\:/Users/jonjo/PrivatFinder/app/src/main/res/layout/list_item.xml" value="0.18802083333333333" />
@@ -24,8 +22,13 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
         <entry key="app/src/main/res/layout/activity_teacher_list.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/list.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.22056159420289856" />
         <entry key="app/src/main/res/layout/viewteacher.xml" value="0.19630192502532928" />
         <entry key="app/src/main/res/menu/dropdown.xml" value="0.2916666666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3325" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

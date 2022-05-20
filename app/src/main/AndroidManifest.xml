@@ -68,8 +68,7 @@
             <activity android:name=".Teachers.GabriellaBonnici"
                 android:label="Tutor Details">
             </activity>
-            <activity android:name=".TeacherList"
-                android:label="Tutor Details">
+            <activity android:name=".TeacherList">
             </activity>
 
     </application>
