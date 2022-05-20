@@ -8,6 +8,7 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
+    //banner on top
     <ImageView
         android:id="@+id/logo"
         android:layout_width="130dp"
@@ -30,7 +31,8 @@
         android:textColor="@color/black"
         android:textSize="42dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="10dp" />
+        tools:layout_editor_absoluteY="10dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="match_parent"
@@ -45,6 +47,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    //area to amking account
+    //sign up
     <EditText
         android:id="@+id/username"
         android:layout_width="300dp"
@@ -75,7 +79,6 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="300dp"
-
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:hint=" Password"
@@ -86,9 +89,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    //button to make account
     <Button
         android:id="@+id/btnSignUp"
-
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
@@ -102,6 +105,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repassword" />
 
+    //if the user already has account
+    //link to login
     <Button
         android:id="@+id/btnLogIn"
         android:layout_width="350dp"

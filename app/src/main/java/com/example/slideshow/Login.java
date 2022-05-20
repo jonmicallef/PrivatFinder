@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
+    //declares everything
     EditText username, password;
     Button btnLogin;
 
@@ -21,27 +22,37 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //finds it in Login_Activity_xml
         username = (EditText) findViewById(R.id.usernameLogin);
         password = (EditText) findViewById(R.id.passwordLogin);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
+        //creates DBHelper instance
         myDB = new DBHelper(this);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //initialises username and password
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
+                //if empty
                 if (user.equals("") || pass.equals("")) {
                     Toast.makeText(Login.this, "enter credentials", Toast.LENGTH_SHORT).show();
-                } else
+                }
+                //if username and password full
+                else
                 {
+                    //checking credentials with DBHelper
                     Boolean result = myDB.checkusernamePassword(user,pass);
+
+                    //if credentials match than taken into the app
                     if (result == true) {
                         Intent intent = new Intent(getApplicationContext(), TeacherList.class);
                         startActivity(intent);
                     }
+                    //if credentials dont match an account this is displayed
                     else {
-                        Toast.makeText(Login.this, "invalid crediantials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "invalid credentials", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

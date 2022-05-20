@@ -112,7 +112,6 @@ public class TeacherList extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
         //getting app logo and setting it in the center of the toolbar
-        getSupportActionBar().setIcon(getDrawable(R.drawable.logo));
         ListView resultsListView = (ListView) findViewById(R.id.results_listview);
 
 

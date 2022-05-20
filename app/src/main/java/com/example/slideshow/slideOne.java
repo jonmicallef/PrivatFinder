@@ -16,9 +16,11 @@ public class slideOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_one);
 
-
+        //finding the buttons in the xml file
         btnnext = (Button) findViewById(R.id.btnnext);
         btnskip = (Button) findViewById(R.id.btnskip);
+        //giving the buttons functions
+
         btnnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,10 +35,12 @@ public class slideOne extends AppCompatActivity {
         });
     }
 
+    //goes to next slide
     public void openNextSlide() {
         Intent intent =new Intent(this, slideTwo.class);
         startActivity(intent);
     }
+    //skips to the MainActivity
     public void skip() {
         Intent intent =new Intent(this, MainActivity.class);
         startActivity(intent);

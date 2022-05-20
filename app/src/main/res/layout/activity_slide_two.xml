@@ -7,6 +7,7 @@
     tools:context=".slideTwo"
     android:background="@drawable/slidetwo">
 
+    //label to explain app
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,6 +19,7 @@
     android:text="Here, in our app, is were you come to find Privat teachers and tutors"
 />
 
+    //next button
     <Button
         android:id="@+id/btnnextt"
         android:layout_width="wrap_content"
@@ -31,6 +33,7 @@
         android:textColor="@color/black"
         />
 
+    //skip button
     <Button
         android:id="@+id/btnskipp"
         android:layout_width="wrap_content"
