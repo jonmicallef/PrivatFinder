@@ -57,7 +57,7 @@
         android:textColor="@color/black"
 
         />
-
+        //password
     <EditText
         android:inputType="textPassword"
         android:id="@+id/passwordLogin"
