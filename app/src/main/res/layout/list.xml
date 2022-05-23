@@ -19,12 +19,13 @@
         android:layout_width="408dp"
         android:layout_height="61dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+   />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="60dp"
-android:padding="2dp"
+        android:padding="2dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop"
         android:src="@drawable/logo"

@@ -59,7 +59,7 @@
         />
 
     <EditText
-
+        android:inputType="textPassword"
         android:id="@+id/passwordLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
